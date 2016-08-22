@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60318C3E1D6A6D67009CA2C1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318C3D1D6A6D67009CA2C1 /* RegisterPageViewController.swift */; };
 		60A4FF741D623CD3007FDA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4FF731D623CD3007FDA9A /* AppDelegate.swift */; };
 		60A4FF761D623CD3007FDA9A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4FF751D623CD3007FDA9A /* FirstViewController.swift */; };
 		60A4FF7B1D623CD3007FDA9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A4FF791D623CD3007FDA9A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60318C3D1D6A6D67009CA2C1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		60A4FF701D623CD3007FDA9A /* Divided.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divided.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A4FF731D623CD3007FDA9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60A4FF751D623CD3007FDA9A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				60A4FF7C1D623CD3007FDA9A /* Assets.xcassets */,
 				60A4FF7E1D623CD3007FDA9A /* LaunchScreen.storyboard */,
 				60A4FF811D623CD3007FDA9A /* Info.plist */,
+				60318C3D1D6A6D67009CA2C1 /* RegisterPageViewController.swift */,
 			);
 			path = Divided;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				60A4FF741D623CD3007FDA9A /* AppDelegate.swift in Sources */,
 				60A4FF761D623CD3007FDA9A /* FirstViewController.swift in Sources */,
+				60318C3E1D6A6D67009CA2C1 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

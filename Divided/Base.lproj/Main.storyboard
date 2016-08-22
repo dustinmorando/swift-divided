@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="1810" y="-252"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Page View Controller-->
         <scene sceneID="KmP-XN-yqp">
             <objects>
-                <viewController id="ioN-HL-Lz5" sceneMemberID="viewController">
+                <viewController id="ioN-HL-Lz5" customClass="RegisterPageViewController" customModule="Divided" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lFm-Kf-KtB"/>
                         <viewControllerLayoutGuide type="bottom" id="HEy-2g-hZJ"/>
@@ -171,6 +171,9 @@
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="ioN-HL-Lz5" eventType="touchUpInside" id="7VL-He-boe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLi-kP-vam">
                                 <rect key="frame" x="105" y="361" width="205" height="40"/>
@@ -187,6 +190,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="repeatPasswordTextField" destination="Zgd-fb-veA" id="ofN-w1-FLY"/>
+                        <outlet property="userEmailTextField" destination="J6k-pk-DC0" id="L2B-Ow-uny"/>
+                        <outlet property="userPasswordTextField" destination="0yb-p9-tuh" id="fCk-ij-x9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXb-ON-OVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
