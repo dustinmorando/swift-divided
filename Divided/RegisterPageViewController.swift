@@ -32,7 +32,7 @@ class RegisterPageViewController: UIViewController {
         let userRepeatPassword = repeatPasswordTextField.text;
         
         //Check for empty fields
-        if(userEmail?.isEmpty || userPassword?.isEmpty || userRepeatPassword?.isEmpty)
+        if(userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
         {
             //Display alert message
             displayMyAlertMessage("All Fields are required");
@@ -50,10 +50,17 @@ class RegisterPageViewController: UIViewController {
         }
         
         //Store data
+        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail");
+        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userPassword");
+        NSUserDefaults.standardUserDefaults().synchronize();
+        
         
         //Display alert message with conformation
+        var myAlert = UIAlertController(title:"Alert", message: "Registration successfull. Thank You!", preferredStyle: UIAlertControllerStyle.Alert);
         
-        
+        let okAction = UIAlertAction(title:"OK", style: UIAlertActionStyle.Default){ACTION in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
         
     }
     
